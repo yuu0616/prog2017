@@ -1,0 +1,89 @@
+import turtle
+
+t = turtle.Turtle()
+
+
+
+def rect(x,y,a):
+
+   t.up()
+
+   t.home()
+
+   t.forward(x)
+
+   t.left(90)
+
+   t.forward(y)
+
+   t.down()
+
+   for i in range(4):
+
+     t.forward(a)
+
+     t.left(-90)
+
+
+
+
+
+t.clear()
+
+rect(10,10,100)
+
+rect(10,-110,100)
+
+rect(-110,10,100)
+
+rect(-110,-110,100)
+
+関数:複数の処理をひとまとめにしたもの
+
+オブジェクト:複数の性質と複数の関数をひとまとめにしたもの
+
+import random
+
+class Dice:
+
+  face_num = 6
+
+  def shoot(self):
+
+    return random.radient(1,face_num)
+
+   
+
+aDice = Dice()＃クラスを基にオブジェクトを作る
+
+aDice.shoot()#オブジェクトを使う
+
+aDice.face_num = 10000
+
+aDice.shoot()
+
+bDice = Dice()
+
+bDice.shoot()
+
+クラス:オブジェクトの設計図
+
+-オブジェクト:データと操作をまとめたもの
+
+クラス派生:クラスを基に、別のクラスを作ることで新しいクラスはもとのクラスの性質を継承する。
+
+import sys
+
+s=0
+
+for line in sys.stdin:
+
+  s+=int(line.strip())
+
+  
+
+print(s)
+
+for i range in(10000):
+
+  print(i)
